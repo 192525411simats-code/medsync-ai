@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediSync AI Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+        }
+
+        .header {
+            background: #173b57;
+            color: white;
+            padding: 20px 30px;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .header p {
+            margin: 6px 0 0;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 22px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #555;
+        }
+
+        .number {
+            font-size: 32px;
+            font-weight: bold;
+            color: #173b57;
+        }
+
+        .section {
+            margin-top: 30px;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 14px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: #f0f4f8;
+        }
+
+        .status {
+            font-weight: bold;
+        }
+
+        @media (max-width: 900px) {
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>🏥 MediSync AI</h1>
+    <p>Intelligent Hospital Resource & Patient Flow Management System</p>
+</div>
+
+<div class="container">
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Total Beds</h3>
+            <div class="number">120</div>
+        </div>
+
+        <div class="card">
+            <h3>Available Beds</h3>
+            <div class="number">34</div>
+        </div>
+
+        <div class="card">
+            <h3>Patients Today</h3>
+            <div class="number">86</div>
+        </div>
+
+        <div class="card">
+            <h3>Medical Staff</h3>
+            <div class="number">42</div>
+        </div>
+
+    </div>
+
+    <div class="section">
+        <h2>Patient Flow</h2>
+
+        <table>
+            <tr>
+                <th>Department</th>
+                <th>Patients</th>
+                <th>Status</th>
+            </tr>
+
+            <tr>
+                <td>Emergency</td>
+                <td>18</td>
+                <td class="status">High</td>
+            </tr>
+
+            <tr>
+                <td>Outpatient</td>
+                <td>32</td>
+                <td class="status">Normal</td>
+            </tr>
+
+            <tr>
+                <td>Laboratory</td>
+                <td>21</td>
+                <td class="status">Normal</td>
+            </tr>
+
+            <tr>
+                <td>Inpatient</td>
+                <td>15</td>
+                <td class="status">Moderate</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>🤖 AI Prediction</h2>
+        <p>
+            Predicted patient demand for the next period:
+            <strong>High</strong>
+        </p>
+
+        <p>
+            Recommended action:
+            <strong>Prepare additional beds and staff.</strong>
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
